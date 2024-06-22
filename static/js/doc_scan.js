@@ -156,7 +156,6 @@ function randomFromTo(from, to) {
 $(document).ready(function(){
   $("#sendData").click(function(){
       $("#resultImageContainer").html('');
-      $("#loader").html('<img src="/static/images/scan.gif">');
       $.ajax({
         type : 'POST',
         url : "/crop",
@@ -169,10 +168,9 @@ $(document).ready(function(){
         success: function(){
           setTimeout(function(){
             var timestamp = new Date().getTime();
-            $("#loader").html('');
             $("#resultImageContainer").html('<img src="/static/media/cropped_img.jpg?ts=' + timestamp + '" class="img-fluid" alt="Scanned Image">');
             $("#downloadImage").attr("href", "/static/media/cropped_img.jpg?ts=' + timestamp + '").attr("download", "cropped_img.jpg").show();
-          },1000);
+          },0);
         }
       });
   });
