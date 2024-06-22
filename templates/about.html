@@ -1,102 +1,27 @@
 {% extends 'index.html' %}
 
 {% block body %}
-<br>
-<div class = "container">
-    <h3>Welcome to Course "Intelligently Extract Text & Data from Document with OCR NER" !!!</h3>
+<div class="container mt-5">
+        <h1 class="mb-4">About This Document Scanner App</h1>
+        <p class="lead">Welcome to my Document Scanner App! This app was designed to provide you with a document scanning experience similar to CamScanner but without the annoying watermarks.</p>
 
-        <p>In this course you will learn how to develop customized Named Entity Recognizer. 
-            The main idea of this course is to extract entities from the scanned documents like invoice, 
-            Business Card, Shipping Bill, Bill of Lading documents etc. However, 
-            for the sake of data privacy we restricted our views to Business Card. 
-            But you can use the framework explained to all kinds of financial documents. 
-            Below given is the curriculum we are following to develop the project.
-            To develop this project we will use two main technologies in data science are,</p>
-            <ol>
-                <li>Computer Vision</li>
-                <li>Natural Language Processing</li>
-            </ol>
-            
-        <p>
-            In Computer Vision module, we will scan the document, identify the location of text and finally extract text from the image. 
-            Then in Natural language processing, 
-            we will extract the entitles from the text and do necessary text cleaning and parse the entities form the text.
-        </p> 
-            
-        <p><strong>Python Libraries used in Computer Vision Module.</strong></p> 
-        <ul>
-            <li>OpenCV</li>
-            <li>Numpy</li>
-            <li>Pytesseract</li>
+        <h2 class="mt-5">Features</h2>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">No Watermarks: Enjoy clean and professional scans without any watermarks.</li>
+            <li class="list-group-item">High-Quality Scans: Leverages OpenCV for superior image processing.</li>
+            <li class="list-group-item">User-Friendly Interface: Easy to use with a simple and intuitive interface.</li>
+            <li class="list-group-item">Auto-Edge Detection: Automatically detects and crops document edges for perfect scans.</li>
         </ul>
-        <p><strong>Python Libraries used in Natural Language Processing</strong></p>
-        <ul>
-            <li>SpaCy</li>
-            <li>Pandas</li>
-            <li>Regular Expression</li>
-            <li>String</li>
+
+        <h2 class="mt-5">Technologies Used</h2>
+        <p>This Document Scanner App was built using the following technologies:</p>
+        <ul class="list-group mb-4">
+            <li class="list-group-item">OpenCV: For advanced image processing and computer vision tasks.</li>
+            <li class="list-group-item">Python: The core programming language used for the backend logic.</li>
+            <li class="list-group-item">Flask: The lightweight web framework used for building the backend.</li>
+            <li class="list-group-item">JavaScript: For creating a responsive and dynamic user interface.</li>
+            <li class="list-group-item">Bootstrap: To ensure a responsive design that works across all devices.</li>
+            <li class="list-group-item">HTML & CSS: For structuring and styling the web pages.</li>
         </ul>
-        <p>
-            As are combining two major technologies to develop the project, 
-            for the sake of easy to understand we divide the course into several stage of development.
-        </p>
-            
-        <p>
-            <strong>Stage -1: We will setup the project by doing the necessary installations and requirements.</strong>
-            <ul>
-                <li>Install Python</li>
-                <li>Install Dependencies</li>
-            </ul>
-
-        </p>
-        <p>
-            <strong>Stage -2: We will do data preparation. That is we will extract text from images using Pytesseract and also do necessary cleaning.</strong>
-            <ul>
-                <li>Gather Images</li>
-                <li>Overview on Pytesseract</li>
-                <li>Extract Text from all Image</li>
-                <li>Clean and Prepare text</li>
-            </ul>
-        </p>
-        <p>
-        <strong>Stage -3: We will see how to label NER data using BIO tagging.</strong> 
-            <ul>
-                <li>Manually Labeling with BIO technique
-                    <ul>
-                        <li>B - Beginning</li>
-                        <li>I  -  Inside</li>
-                        <li>O - Outside</li>
-                    </ul>
-                </li>
-            </ul>
-        </p>
-            
-        <p>
-            <strong>Stage -4: We will further clean the text and preprocess the data for to train machine learning.</strong>
-            <ul>
-                <li>Prepare Training Data for Spacy</li>
-                <li>Convert data into spacy format</li>
-            </ul>
-        </p>
-
-        <p>
-            <strong>Stage -5: With the preprocess data we will train the Named Entity model.</strong>
-            <ul>
-                <li>Configuring NER Model</li>
-                <li>Train the model</li>
-            </ul>
-        </p>
-            
-        <p>
-            <strong>Stage -6: We will predict the entitles using NER and model and create data pipeline for parsing text.</strong>
-            <ul>
-                <li>Load Model</li>
-                <li>Render and Serve with Displacy</li>
-                <li>Draw Bounding Box on Image</li>
-                <li>Parse Entitles from Text</li>
-            </ul>
-        </p>
-            
-        <h4>Finally, we will put all together and create document scanner app.</h4>
     </div>
     {% endblock %}
